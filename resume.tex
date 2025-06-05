@@ -17,7 +17,6 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[
-	%a4paper, % Uncomment for A4 paper size (default is US letter)
 	11pt, % Default font size, can use 10pt, 11pt or 12pt
 ]{resume} % Use the resume class
 
@@ -44,7 +43,9 @@
 
 \begin{rSection}{Summary}
 
-Design Engineer with a background in Computer Engineering, specializing in embedded systems development, firmware, and full-stack application design. Proven ability to develop and implement robust solutions for industrial automation using C, Rust, and Dart/Flutter.
+Embedded Firmware Engineer with a Computer Engineering background, 
+specializing in robust and secure embedded systems for industrial automation. 
+Skilled in developing high-performance solutions using C, Rust, and Dart/Flutter across RTOS and bare-metal environments.
 
 \end{rSection}
 
@@ -55,7 +56,7 @@ Design Engineer with a background in Computer Engineering, specializing in embed
 \begin{rSection}{Education}
 	
 	\textbf{Rose-Hulman Institute of Technology} \hfill \textit{Terre Haute, IN} \\ 
-	Bachelor of Science in Computer Engineering \hfill Graduated: May 2024 \\
+	\textit{Bachelor of Science in Computer Engineering} \hfill Graduated: May 2024
 	
 \end{rSection}
 
@@ -66,10 +67,14 @@ Design Engineer with a background in Computer Engineering, specializing in embed
 \begin{rSection}{Professional Experience}
 
     \begin{rSubsection}{FACTS Engineering LLC}{July 2024 -- Present}{Design Engineer}{New Port Richey, FL}
-		\item Led full-cycle development of I/O modules for use in industry (schematics, UL compliance, part selection) and firmware (C, industrial protocols), including product lifecycle management (redesigns, value engineering).
-		\item \textbf{Unreleased IoT Device Firmware} (November 2024 -- Present): Developed FreeRTOS-based firmware in C for a remote Modbus TCP I/O slave, architecting the network stack and a modular I/O module sign-on sequence.
-		\item \textbf{IoT Device Configuration App} (November 2024 -- Present): Designed and developed a cross-platform Flutter application for configuration and real-time monitoring of the I/O slave, utilizing UDP multicasting and TCP communication.
-        \item \textbf{Rust-based PLC Driver for RP2350} (September 2024 -- November 2024): Ported our open-source Arduino PLC driver to the Raspberry Pi RP2350 microcontroller, re-implementing core logic in Rust utilizing the Embassy (async) framework for enhanced performance and safety.
+		\item Led full-cycle development of new I/O modules and redesigns for use in industrial automation, including part selection, schematic design, and firmware.
+		\item \textbf{Industrial Modbus TCP Remote I/O} (November 2024 -- Present): Developed FreeRTOS-based firmware in C for a remote Modbus TCP I/O server.
+		\begin{rSubItems}
+			\item Authored comprehensive, user-friendly technical documentation for the Remote I/O system, 
+			leveraging Markdown and Sphinx (via Jupyter-book) for improved accessibility.
+		\end{rSubItems}
+		\item \textbf{Remote I/O Configurator (Flutter)} (November 2024 -- Present): Implemented UDP scanning for device discovery and utilized TCP/IP protocols for configuring device settings, including IP addresses and modular I/O parameters.
+        \item \textbf{Rust PLC Driver for RP2350} (September 2024 -- November 2024): Ported our open-source Arduino PLC driver into Rust, re-implementing core logic as hardware-agnostic code utilizing the Embassy (async) framework.
 	\end{rSubsection}
 
 %------------------------------------------------
@@ -100,11 +105,11 @@ Design Engineer with a background in Computer Engineering, specializing in embed
 \begin{rSection}{Technical Skills}
 
 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-		Languages & C, Rust, Python (Scripting), Java, Dart (Flutter) \\
+		Languages & Embedded C, Rust, Python (Scripting), Dart (Flutter), Markdown \\
         RTOS & FreeRTOS, Rust Embassy \\
-		Hardware & Verilog HDL, MCU (STM32, RP2350), FPGA, Picoscope, Hardware Debugging \\
-        Protocols \& APIs & Modbus TCP, TCP/IP, UDP, I2C, (REST - if still relevant) \\
-		Tools & Git, VS Code, Pads Logic, Altium, IAR, Vivado, Android Studio
+		Hardware & MCU (STM32, RP2350), FPGA, Hardware Debugging \\
+        Protocols \& APIs & SPI, I2C, EtherCAT, Modbus TCP, UDP \\
+		Tools & Git, Pads Logic, Altium, Jupyter-book
 	\end{tabular}
 
 \end{rSection}

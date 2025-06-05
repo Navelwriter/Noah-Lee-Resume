@@ -140,7 +140,7 @@
 	\large\textbf{#1} \hfill {#2} % Bold company name (now larger) and date to the right
 	\ifthenelse{\equal{#3}{}}{}{ % If the third parameter is empty, don't output the job title and location line
 		\\ % Job title and location on a new line
-		\textbf{\textit{#3}} \hfill \textit{#4} % Output job title and location (Job Title is now Bold Italic)
+		{\textit{#3}} \hfill \textit{#4} % Output job title and location (Job Title is now Bold Italic)
 	}%
 	\smallskip % Vertical whitespace
 	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
@@ -148,4 +148,21 @@
 }{
 	\end{list}
 	\vspace{0.5em} % Vertical whitespace after the end of the list
+}
+
+%----------------------------------------------------------------------------------------
+%	SUB-BULLET FORMATTING FOR NESTED ITEMS
+%----------------------------------------------------------------------------------------
+
+% Defines the rSubItems environment for creating indented sub-bullets within job descriptions
+\newenvironment{rSubItems}{ 
+	\begin{list}{$\circ$}{ % Use open circle for sub-bullets
+		\leftmargin=1.5em % Indent sub-bullets more than main bullets
+		\setlength{\itemsep}{-0.5em} % Reduce vertical spacing between sub-items
+		\vspace{-0.3em} % Reduce space before first sub-item
+	}
+}{
+	\end{list}
+	\vspace{-0.2em} % Reduce space after sub-items list
+	\smallskip % Add vertical whitespace after the sub-items list
 }

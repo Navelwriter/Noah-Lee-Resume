@@ -1,0 +1,70 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.log
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.idx
+*.ind
+*.ilg
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.brf
+*.lol
+*.nav
+*.snm
+*.vrb
+*.figlist
+*.makefile
+*.fignums
+
+# PDF output (uncomment if you don't want to track the final PDF)
+# *.pdf
+
+# Temporary files
+*~
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# VS Code
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/.ropeproject
+
+# LaTeX auxiliary files
+*.auxlock
+*.figlist
+*.makefile
+*.nlo
+*.nls
+*.xdy
